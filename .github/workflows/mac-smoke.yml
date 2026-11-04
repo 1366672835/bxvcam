@@ -1,0 +1,9 @@
+﻿name: mac-smoke
+on:
+  workflow_dispatch:
+jobs:
+  hi:
+    runs-on: macos-latest
+    steps:
+      - name: hello
+        run: sw_vers && echo mac-ok
